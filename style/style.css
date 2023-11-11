@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+::after ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(225, 100%, 94%);
+}
+
+main {
+  width: 25%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+}
+main #card-image {
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+main .text-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+}
+main .text-section p {
+  margin: 0;
+}
+main .text-section .plan {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  background-color: hsl(225, 100%, 98%);
+  padding: 15px;
+  border-radius: 5px;
+}
+main .text-section .plan a {
+  flex-grow: 2;
+  text-align: end;
+}
+main .text-section .plan .price {
+  flex-grow: 1;
+}
+main .text-section button {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+}
+main .text-section a {
+  color: hsl(224, 23%, 55%);
+}/*# sourceMappingURL=style.css.map */

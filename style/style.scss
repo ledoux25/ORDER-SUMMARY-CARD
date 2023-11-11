@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+::after ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $Pale-blue;
+
+
+}
+
+main{
+    width: 25%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    #card-image{
+        position: relative;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    .text-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 30px;
+        text-align: center;
+        // h2{
+        //     margin: 0;
+        // }
+        p{
+            margin: 0;
+        }
+
+        .plan{
+            display: flex;
+            align-items: center;
+            width: 95%;
+            background-color: $Very-pale-blue;
+            padding: 15px;
+            border-radius: 5px;
+            a{
+                flex-grow: 2;
+                text-align: end;
+            }
+            .price{
+                flex-grow: 1;
+            }
+
+        }
+        
+        button{
+            background-color: $Bright-blue;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-weight: 700;
+            border-radius: 8px;
+        }
+        
+        a{
+            color: $Desaturated-blue;
+        }
+    }
+}
+
+
