@@ -35,12 +35,13 @@ body{
 
 main{
     width: 25%;
-    height: 70%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     border-radius: 15px;
+    padding-bottom: 15px;
     #card-image{
         position: relative;
         width: 100%;
@@ -49,15 +50,28 @@ main{
     .text-section{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         padding: 0 30px;
         text-align: center;
-        // h2{
-        //     margin: 0;
-        // }
+        height: 70%;
+        margin-top: 10px;
+
+        h2{
+            margin: 0;
+        }
         p{
             margin: 0;
+            font-size: 13px;
+            color: $Desaturated-blue;
+        }
+        .title{
+            font-weight: 700;
+            color: black;
+        }
+
+        span{
+            color: $Desaturated-blue;
         }
 
         .plan{
@@ -66,7 +80,8 @@ main{
             width: 95%;
             background-color: $Very-pale-blue;
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 13px;
             a{
                 flex-grow: 2;
                 text-align: end;
@@ -74,23 +89,30 @@ main{
             .price{
                 flex-grow: 1;
             }
-
+            img{
+                height: 40px;
+                width: 40px;
+            }
         }
         
         button{
             background-color: $Bright-blue;
             border: none;
             width: 100%;
-            padding: 10px;
+            padding: 13px;
             color: white;
-            font-weight: 700;
+            font-weight: 800;
             border-radius: 8px;
         }
         
-        a{
-            color: $Desaturated-blue;
-        }
+
     }
 }
 
+.bg{
+    color: $Desaturated-blue;
+    text-decoration: none;
+    font-size: 13px;
 
+    font-weight: 700;
+}

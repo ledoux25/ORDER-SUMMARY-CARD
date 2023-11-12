@@ -26,12 +26,13 @@ body {
 
 main {
   width: 25%;
-  height: 70%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   border-radius: 15px;
+  padding-bottom: 15px;
 }
 main #card-image {
   position: relative;
@@ -41,13 +42,27 @@ main #card-image {
 main .text-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   padding: 0 30px;
   text-align: center;
+  height: 70%;
+  margin-top: 10px;
+}
+main .text-section h2 {
+  margin: 0;
 }
 main .text-section p {
   margin: 0;
+  font-size: 13px;
+  color: hsl(224, 23%, 55%);
+}
+main .text-section .title {
+  font-weight: 700;
+  color: black;
+}
+main .text-section span {
+  color: hsl(224, 23%, 55%);
 }
 main .text-section .plan {
   display: flex;
@@ -55,7 +70,8 @@ main .text-section .plan {
   width: 95%;
   background-color: hsl(225, 100%, 98%);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 13px;
 }
 main .text-section .plan a {
   flex-grow: 2;
@@ -64,15 +80,23 @@ main .text-section .plan a {
 main .text-section .plan .price {
   flex-grow: 1;
 }
+main .text-section .plan img {
+  height: 40px;
+  width: 40px;
+}
 main .text-section button {
   background-color: hsl(245, 75%, 52%);
   border: none;
   width: 100%;
-  padding: 10px;
+  padding: 13px;
   color: white;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 8px;
 }
-main .text-section a {
+
+.bg {
   color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
