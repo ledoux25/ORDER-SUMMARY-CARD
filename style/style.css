@@ -31,6 +31,7 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: white;
+  min-width: 340px;
   border-radius: 15px;
   padding-bottom: 15px;
 }
@@ -76,6 +77,12 @@ main .text-section .plan {
 main .text-section .plan a {
   flex-grow: 2;
   text-align: end;
+  font-weight: 500;
+  color: hsl(245, 75%, 52%);
+}
+main .text-section .plan a:hover {
+  color: hsl(256, 100%, 65%);
+  text-decoration: none;
 }
 main .text-section .plan .price {
   flex-grow: 1;
@@ -93,10 +100,56 @@ main .text-section button {
   font-weight: 800;
   border-radius: 8px;
 }
+main .text-section button:hover {
+  background: hsl(256, 100%, 65%);
+  box-shadow: 1;
+  box-shadow: 0px 0px 5px 1px hsl(256, 100%, 81%);
+  cursor: pointer;
+}
 
 .bg {
   color: hsl(224, 23%, 55%);
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
+}
+
+.bg:hover {
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  main {
+    min-width: 200px;
+    height: 65%;
+  }
+  main .text-section h2 {
+    font-size: 18px;
+  }
+  main .text-section p {
+    font-size: 9px !important;
+  }
+  main .text-section button {
+    font-size: 9px;
+  }
+  main .text-section .plan {
+    font-size: 9px !important;
+  }
+  main .text-section .plan img {
+    height: 25px;
+    width: 25px;
+  }
+  .bg {
+    font-size: 9px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
