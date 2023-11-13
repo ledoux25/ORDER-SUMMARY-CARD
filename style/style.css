@@ -25,8 +25,7 @@ body {
 }
 
 main {
-  width: 25%;
-  height: 75%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +33,7 @@ main {
   min-width: 340px;
   border-radius: 15px;
   padding-bottom: 15px;
+  box-shadow: 0 1px 9px 1px rgb(143, 143, 143);
 }
 main #card-image {
   position: relative;
@@ -45,16 +45,17 @@ main .text-section {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 0 40px;
   text-align: center;
   height: 70%;
   margin-top: 10px;
+  padding-bottom: 10px;
 }
 main .text-section h2 {
-  margin: 0;
+  margin: 10px;
 }
 main .text-section p {
-  margin: 0;
+  margin: 7px 0px 15px 0;
   font-size: 13px;
   color: hsl(224, 23%, 55%);
 }
@@ -99,6 +100,7 @@ main .text-section button {
   color: white;
   font-weight: 800;
   border-radius: 8px;
+  margin: 25px 0;
 }
 main .text-section button:hover {
   background: hsl(256, 100%, 65%);
@@ -120,9 +122,12 @@ main .text-section button:hover {
 }
 
 @media screen and (max-width: 380px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
   main {
-    min-width: 200px;
-    height: 65%;
+    width: 250px !important;
+    min-width: 0;
   }
   main .text-section h2 {
     font-size: 18px;
